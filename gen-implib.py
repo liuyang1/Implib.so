@@ -92,6 +92,7 @@ def main():
 
   # TODO: detect public data symbols and issue warning
 
+  # filter out all function which need wrap layer
   funs = list(filter(is_public_fun, syms))
 
   suffix = os.path.basename(load_name)
